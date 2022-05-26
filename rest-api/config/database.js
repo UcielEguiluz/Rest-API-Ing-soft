@@ -77,7 +77,10 @@ module.exports = {
       port: Env.get('DB_PORT', '5432'),
       user: Env.get('DB_USER', 'ksmxkwcknheuwp'),
       password: Env.get('DB_PASSWORD', 'ab9b00bfeba9704675c74707a6867637bc37da49412541608704e367fbcbba53'),
-      database: Env.get('DB_DATABASE', 'd69lnvp25bnq86')
+      database: Env.get('DB_DATABASE', 'd69lnvp25bnq86'),
+      ssl:{
+        rejectUnauthorized: false
+      }
     },
     debug: Env.get('DB_DEBUG', false)
   }
